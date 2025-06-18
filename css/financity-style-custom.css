@@ -165,8 +165,8 @@ body.financity-boxed .financity-body-wrapper{ margin-top: 0px; margin-bottom: 0p
 .financity-header-side-nav.financity-style-side{ padding-left: 70px; padding-right: 70px; }.financity-header-side-nav.financity-style-left .sf-vertical > li > ul.sub-menu{ padding-left: 70px; }.financity-header-side-nav.financity-style-right .sf-vertical > li > ul.sub-menu{ padding-right: 70px; } 
  .financity-navigation .sf-vertical > li{ padding-top: 16px; padding-bottom: 16px; } 
 .financity-header-style-bar .financity-logo-right-text{ padding-top: 56px; } 
-.financity-logo{ padding-top: 47px; } 
-.financity-logo{ padding-bottom: 57px; } 
+.financity-logo{ padding-top: 20px; } 
+.financity-logo{ padding-bottom: 20px; } 
 .financity-logo-inner{ max-width: 265px; } 
 .financity-mobile-header .financity-logo-inner{ max-width: 130px; } 
 .financity-navigation{ padding-top: 24px; }.financity-navigation-top{ top: 24px; } 
