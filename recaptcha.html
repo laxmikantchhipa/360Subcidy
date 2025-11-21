@@ -8,6 +8,7 @@
           if (window.AndroidInterface && window.AndroidInterface.onTokenReceived) {
             window.AndroidInterface.onTokenReceived(token);
           }
+          window.webkit.messageHandlers.iosInterface.postMessage("LKC Test");
           // For iOS
             if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosInterface) {
                 window.webkit.messageHandlers.iosInterface.postMessage(token);
