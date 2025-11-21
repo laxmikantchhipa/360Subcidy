@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    <script type="text/javascript">
+        function onSubmit(token) {
+          // for Android
+          if (window.AndroidInterface && window.AndroidInterface.onTokenReceived) {
+            window.AndroidInterface.onTokenReceived(token);
+          }
+          // For iOS
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosInterface) {
+                window.webkit.messageHandlers.iosInterface.postMessage(token);
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <form action="javascript:void(0);" method="POST">
+      <div class="g-recaptcha" data-sitekey="6Ld46RIsAAAAAHz_pWkyx2Oo5fD12wlLAZ8ADpK9" data-action="LOGIN" data-callback="onSubmit"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
